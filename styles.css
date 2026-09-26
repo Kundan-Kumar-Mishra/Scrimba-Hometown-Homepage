@@ -55,7 +55,7 @@ body{
     background-color: #F1FAEE;
     padding: 40px 0px;
     color: #520707;
-    height: 378px;
+    /* height: 378px; */
 }
 
 .activity-section h3{
@@ -79,15 +79,18 @@ body{
     display: flex;
     justify-content: space-evenly;
     margin-top: 54px;
+    flex-wrap: wrap;
 }
 
 .Places-to-visit{
-    width: 26%;
+    /* width: 26%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    margin-top: 15px;
     box-sizing: border-box;
+    flex-basis: 330px;
 }
 
 .Places-to-visit p{
@@ -128,4 +131,10 @@ body{
     border-radius: 10px;
     filter: invert(1);
 
+}
+
+@media screen and (min-width: 515px) and (max-width: 990px){
+    .Places-to-visit{
+        flex-basis: 260px;
+    }
 }
